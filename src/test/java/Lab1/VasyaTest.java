@@ -1,3 +1,6 @@
+package Lab1;
+
+import Lab1.Vasya;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,3 +1,5 @@
+package Lab1;
+
 public class TestingLab1 {
     int getMax(int[] number){
         int max=number[0];

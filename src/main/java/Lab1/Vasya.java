@@ -1,3 +1,5 @@
+package Lab1;
+
 public class Vasya {
     public static String ISEqu(int[][] Allforces){
         int []sumF=new int[3];
