@@ -19,7 +19,7 @@ class QStateTest {
             String[] res = mainObj.input('a');
             assertEquals("NORMAL", res[0]);
             assertEquals("DATE", res[1]);
-            assertEquals("2000-5-5", res[2]);
+            assertEquals("2000-1-1", res[2]);
             assertEquals("0:0", res[3]);
         }
 
@@ -29,7 +29,7 @@ class QStateTest {
             String[] res = mainObj.input('a');
             assertEquals("NORMAL", res[0]);
             assertEquals("TIME", res[1]);
-            assertEquals("2000-5-5", res[2]);
+            assertEquals("2000-1-1", res[2]);
             assertEquals("0:0", res[3]);
         }
 
@@ -40,7 +40,7 @@ class QStateTest {
             String[] res = mainObj.input('c');
             assertEquals("UPDATE", res[0]);
             assertEquals("min", res[1]);
-            assertEquals("2000-5-5", res[2]);
+            assertEquals("2000-1-1", res[2]);
             assertEquals("0:0", res[3]);
         }
 
@@ -52,7 +52,7 @@ class QStateTest {
             String[] res = mainObj.input('b');
             assertEquals("UPDATE", res[0]);
             assertEquals("min", res[1]);
-            assertEquals("2000-5-5", res[2]);
+            assertEquals("2000-1-1", res[2]);
             assertEquals("0:1", res[3]);
         }
 
@@ -65,7 +65,7 @@ class QStateTest {
             String[] res = mainObj.input('a');
             assertEquals("UPDATE", res[0]);
             assertEquals("hour", res[1]);
-            assertEquals("2000-5-5", res[2]);
+            assertEquals("2000-1-1", res[2]);
             assertEquals("0:1", res[3]);
         }
 
@@ -79,7 +79,7 @@ class QStateTest {
             String[] res = mainObj.input('b');
             assertEquals("UPDATE", res[0]);
             assertEquals("hour", res[1]);
-            assertEquals("2000-5-5", res[2]);
+            assertEquals("2000-1-1", res[2]);
             assertEquals("1:1", res[3]);
         }
 
@@ -94,7 +94,7 @@ class QStateTest {
             String[] res = mainObj.input('a');
             assertEquals("UPDATE", res[0]);
             assertEquals("day", res[1]);
-            assertEquals("2000-5-5", res[2]);
+            assertEquals("2000-1-1", res[2]);
             assertEquals("1:1", res[3]);
         }
 
@@ -110,7 +110,7 @@ class QStateTest {
             String[] res = mainObj.input('b');
             assertEquals("UPDATE", res[0]);
             assertEquals("day", res[1]);
-            assertEquals("2000-5-6", res[2]);
+            assertEquals("2000-1-2", res[2]);
             assertEquals("1:1", res[3]);
         }
 
@@ -129,7 +129,7 @@ class QStateTest {
             String[] res = mainObj.input('a');
             assertEquals("UPDATE", res[0]);
             assertEquals("year", res[1]);
-            assertEquals("2000-5-5", res[2]);
+            assertEquals("2000-2-2", res[2]);
             assertEquals("1:1", res[3]);
         }
 
@@ -149,7 +149,7 @@ class QStateTest {
             String[] res = mainObj.input('b');
             assertEquals("UPDATE", res[0]);
             assertEquals("year", res[1]);
-            assertEquals("2000-5-5", res[2]);
+            assertEquals("2001-2-2", res[2]);
             assertEquals("1:1", res[3]);
         }
 
@@ -170,7 +170,7 @@ class QStateTest {
             String[] res = mainObj.input('a');
             assertEquals("NORMAL", res[0]);
             assertEquals("TIME", res[1]);
-            assertEquals("2000-5-5", res[2]);
+            assertEquals("2001-2-2", res[2]);
             assertEquals("1:1", res[3]);
         }
     }
@@ -189,7 +189,7 @@ class QStateTest {
             String[] res = mainObj.input('c');
             assertEquals("UPDATE", res[0]);
             assertEquals("min", res[1]);
-            assertEquals("2000-5-5", res[2]);
+            assertEquals("2000-1-1", res[2]);
             assertEquals("0:0", res[3]);
         }
 
@@ -199,7 +199,7 @@ class QStateTest {
             String[] res = mainObj.input('b');
             assertEquals("UPDATE", res[0]);
             assertEquals("min", res[1]);
-            assertEquals("2000-5-5", res[2]);
+            assertEquals("2000-1-1", res[2]);
             assertEquals("0:1", res[3]);
         }
 
@@ -210,7 +210,7 @@ class QStateTest {
             String[] res = mainObj.input('b');
             assertEquals("UPDATE", res[0]);
             assertEquals("min", res[1]);
-            assertEquals("2000-5-5", res[2]);
+            assertEquals("2000-1-1", res[2]);
             assertEquals("0:2", res[3]);
         }
 
@@ -222,7 +222,7 @@ class QStateTest {
             String[] res = mainObj.input('a');
             assertEquals("UPDATE", res[0]);
             assertEquals("hour", res[1]);
-            assertEquals("2000-5-5", res[2]);
+            assertEquals("2000-1-1", res[2]);
             assertEquals("0:2", res[3]);
         }
 
@@ -235,7 +235,7 @@ class QStateTest {
             String[] res = mainObj.input('b');
             assertEquals("UPDATE", res[0]);
             assertEquals("hour", res[1]);
-            assertEquals("2000-5-5", res[2]);
+            assertEquals("2000-1-1", res[2]);
             assertEquals("1:2", res[3]);
         }
 
@@ -249,7 +249,7 @@ class QStateTest {
             String[] res = mainObj.input('b');
             assertEquals("UPDATE", res[0]);
             assertEquals("hour", res[1]);
-            assertEquals("2000-5-5", res[2]);
+            assertEquals("2000-1-1", res[2]);
             assertEquals("2:2", res[3]);
         }
     }
